@@ -17,8 +17,6 @@ $( document ).ready(function(){
     
     console.log("clicked");
 
-    let messageArray = [];
-  
     let result = "";
     let message = $('#message').val().toUpperCase().split(" ");
 
@@ -47,8 +45,6 @@ $( document ).ready(function(){
 $("#civilianSubmit").click(function(e){e.preventDefault()
     
   console.log("clicked");
-
-  let messageArray = [];
 
   let result = "";
   let message = $('#message').val().toUpperCase().split(" ");
