@@ -11,6 +11,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
   <script  src="Scripts/script.js"></script>
 
+
 <!-- Header Bar  -->
 <nav class="navbar navbar-expand-lg bg-dark navbar-light fixed-top">
    <div class="container">
@@ -24,14 +25,17 @@
 
 <section class="container mt-5">
  <br>
-   
+ <img src="https://i.pinimg.com/originals/9d/4a/f7/9d4af7696a93d0f1260aab5949f3a587.gif" class="card-img-top" alt="Computer Img">
+ <div class="image-text">
+   <h1 style="font-size: 75px;">Welcome to the Network...</h1>
+ </div>
  <!-- Code Analyzer -->
       <div class="center">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Network Coder</h5>
             <p class="card-text">The coder was designed to help keep secret spy messages out of enemy hands! The enemy could still intercept your message, but at least they won't be able to understand.
-                <br><br> Enter your message into the box below and we can code it for you.  
+                <br><br> Enter your message into the box below and we will code it for you based on the first letter of each word.  
             </p>
           </div>
         </div>
@@ -48,23 +52,17 @@
         <input type="message" class="form-control" id="message" placeholder="Enter your message" name="message">
       </div>
 
-<!--  Coding Type   -->
-      <p> Select what type of code: </p>
-      <div class="form-check">
-        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Freshman">NATO Phonetic
-        <label class="form-check-label" for="radio1"></label>
-      </div>
-      <div class="form-check">
-        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="Transfer">Civilian Phonetic
-        <label class="form-check-label" for="radio2"></label>
-      </div>
-      <br>
-
-<!--  Coding   -->
-      <button id="formSubmit" class="btn btn-primary">Code</button>
+<!--  Coding Buttons (Type and Reset)   -->
+      <button id="natoSubmit" class="btn btn-primary">NATO Phonetic</button>
+      <button id="civilianSubmit" class="btn btn-primary">Civilian Phonetic</button>
       <button id="formReset" class="btn btn-primary">Clear</button>
     </form>
-     <p id="userGreeting" style="text-align:center"></p>
+    <br>
+      <p id="outputHeader"></p>
+      <br>
+      <p id="userOutput"></p>
+      <br>
+      <p id="hackedOutput"></p>
           </div>
         </div>
       </div>
@@ -79,7 +77,7 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4"> Lab</h6>
             <p>
-<!--               <i class="bi bi-arrow-right"></i> -->
+              <i class="bi bi-arrow-right"></i>
               <a href="https://github.com/mmandelyn/juliette.jupiter" target="_blank" class="text-reset">Juliette Repo</a>
             </p>
           </div>
@@ -87,9 +85,9 @@
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4"> Contact HQ </h6>
             <p>
-<!--               <i class="bi bi-arrow-right"></i> -->
+              <i class="bi bi-arrow-right"></i>
               (p) 123-456-7890 <br>
-<!--               <i class="bi bi-arrow-right"></i> -->
+              <i class="bi bi-arrow-right"></i>
               (c) 012-345-6789
             </p>
           </div>
@@ -97,7 +95,7 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4"> Director </h6>
             <p> Mandy McGinnis <br>
-<!--               <i class="bi bi-arrow-right"></i> -->
+              <i class="bi bi-arrow-right"></i>
               mmcginnis1@una.edu 
             </p>
           </div>

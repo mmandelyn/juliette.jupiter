@@ -15,13 +15,28 @@ body {
 }
 .image-text {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px black;
-    font-family: "Graduate", serif;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-family: "Orbitron", sans-serif;
   }
 
+  #outputHeader{
+    font-family: "Orbitron", sans-serif;
+    text-align:center;
+}
 
+#userOutput{
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+    text-align:center;
+}
+  
+#hackedOutput{
+  color: red;
+  font-family: "Orbitron", sans-serif;
+  text-align:center;
+}
